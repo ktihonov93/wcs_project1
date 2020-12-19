@@ -1,0 +1,59 @@
+body {
+    width: 100%;
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.item_box {
+    background-color: whitesmoke;
+    width: 50%;
+    border: 5px solid black;
+    padding: 5px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.item_price {
+    align-self: flex-end;
+}
+
+/* navigation css */
+.sec_nav{
+    display: flex;
+    justify-content: center;
+}
+
+.menu_nav{
+    display: flex;
+    align-items: center;
+}
+
+.menu_item {
+    text-decoration: none;
+    list-style-type: none;
+    background-color: teal;
+    padding: 20px;
+    font-size: large;
+    color: white;
+}
+.menu_nav a {
+    text-decoration: none;
+}
+.menu_item:hover{
+    background-color: gray
+}
+
+ul {
+    padding: 0%;
+}
+
+.items h1 {
+    margin-top: 50px;
+}
