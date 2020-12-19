@@ -7,30 +7,85 @@
     <title>Menu</title>
 </head>
 <body>
-<h1>Menu</h1>
-<p>this will be a menu page</p>
-<div class="secondary_navigation">
-    <ul>
-        <li>Starter</li>
-        <li>Mains</li>
-        <li>Dessert</li>
-        <li>Drinks</li>
+<div class="sec_nav">
+    <ul class="menu_nav">
+        <a href="#starter"><li class="menu_item">Starter</li></a>
+        <a href="#main"><li class="menu_item">Mains</li></a>
+        <a href="#dessert"><li class="menu_item">Dessert</li></a>
+        <a href="#drinks"><li class="menu_item">Drinks</li></a>
     </ul>
 </div>
-<div class="starter_items">
-    <p>here we will have multiple starter items</p>
+<div class="items" id="starter">
+    <h1>Starter</h1>
     <div class="item_box">
-        <h2></h2>
+        <h2 class="item_name">Pigs in Blankets</h2>
+        <p class="item_description">Sausage wrapped in bacon</p>
+        <p class="item_price">8€</p>
+    </div>
+    <div class="item_box">
+        <h2 class="item_name">Spring Rolls</h2>
+        <p class="item_description">Ground pork and shredded vegetables in a wrapper</p>
+        <p class="item_price">6€</p>
+    </div>
+    <div class="item_box">
+        <h2 class="item_name">Oysters</h2>
+        <p class="item_description">Half a dozen fresh oysters</p>
+        <p class="item_price">15€</p>
     </div>
 </div>
-<div class="mains_items">
-    <p>here we will have multiple mains items</p>
+<div class="items" id="main">
+    <h1>Main</h1>
+        <div class="item_box">
+            <h2 class="item_name">T-Bone</h2>
+            <p class="item_description">Something about the dish</p>
+            <p class="item_price">22€</p>
+        </div>
+        <div class="item_box">
+            <h2 class="item_name">Big ass fish</h2>
+            <p class="item_description">Something about the dish</p>
+            <p class="item_price">21€</p>
+        </div>
+        <div class="item_box">
+            <h2 class="item_name">White Rice (Vegetarian)</h2>
+            <p class="item_description">Yep. Plain white rice.</p>
+            <p class="item_price">15€</p>
+        </div>
 </div>
-<div class="dessert_items">
-    <p>here we will have multiple dessert items</p>
+<div class="items" id="dessert">
+    <h1>Dessert</h1>
+        <div class="item_box">
+            <h2 class="item_name">Lemon Tart</h2>
+            <p class="item_description">Something about the dish</p>
+            <p class="item_price">8€</p>
+        </div>
+        <div class="item_box">
+            <h2 class="item_name">Apple Pie</h2>
+            <p class="item_description">Something about the dish</p>
+            <p class="item_price">6€</p>
+        </div>
+        <div class="item_box">
+            <h2 class="item_name">Chocolate Lava Cake</h2>
+            <p class="item_description">Something about the dish</p>
+            <p class="item_price">15€</p>
+        </div>
 </div>
-<div class="drinks_items">
-    <p>here we will have multiple drink items</p>
+<div class="items" id="drinks">
+    <h1>Drinks</h1>
+        <div class="item_box">
+            <h2 class="item_name">Red Wine</h2>
+            <p class="item_description">Bottle of house wine</p>
+            <p class="item_price">12€</p>
+        </div>
+        <div class="item_box">
+            <h2 class="item_name">White Wine</h2>
+            <p class="item_description">Bottle of house wine</p>
+            <p class="item_price">12€</p>
+        </div>
+        <div class="item_box">
+            <h2 class="item_name">Beer</h2>
+            <p class="item_description">Best beer (Pint)</p>
+            <p class="item_price">2€</p>
+        </div>
 </div>
 </body>
 </html>

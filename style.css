@@ -7,7 +7,12 @@ h1 {
     height: 100px; 
     background-color: red;
 }
+
 .container {
     display: flex;
     justify-content: space-around;
+
+.social{
+    height:5px;
+    width:5px;
 }
