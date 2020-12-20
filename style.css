@@ -2,15 +2,41 @@ h1 {
     text-align: center;
 }
 
-.team_image {
+.chef_image_container {
+    display: flex;
+    justify-content: center;
+}
+
+.chef_name {
+    text-align: center;
+}
+
+.chef_image {
     width: 100px; 
     height: 100px; 
     background-color: red;
-}
+ }
 
 .container {
     display: flex;
     justify-content: space-around;
+}
+
+.team {
+    text-align: center;
+}
+
+.team_image {
+    width: 100px; 
+    height: 100px; 
+    background-color: red;
+    display: flex;
+  align-items: center;
+}
+
+.Awards {
+    text-align: center;
+}
 
 .social{
     height:5px;
