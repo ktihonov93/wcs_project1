@@ -12,10 +12,9 @@ h1 {
 }
 
 .chef_image {
-    width: 100px; 
-    height: 100px; 
-    background-color: red;
- }
+    width: 300px; 
+    height: auto; 
+     }
 
 .container {
     display: flex;
