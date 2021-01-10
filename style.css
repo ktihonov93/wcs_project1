@@ -12,7 +12,7 @@ h1 {
 }
 
 .chef_image {
-    width: 300px; 
+    width: 100%; 
     height: auto; 
      }
 
@@ -34,6 +34,16 @@ h1 {
 }
 
 .Awards {
+    text-align: center;
+}
+
+.Awards_image img {
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+
+#contactForm {
     text-align: center;
 }
 
