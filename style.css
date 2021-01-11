@@ -12,7 +12,7 @@ h1 {
 }
 
 .chef_image {
-    width: 300px; 
+    width: 100%; 
     height: auto; 
      }
 
@@ -25,15 +25,35 @@ h1 {
     text-align: center;
 }
 
-.team_image {
-    width: 100px; 
-    height: 100px; 
-    background-color: red;
-    display: flex;
-  align-items: center;
+.team_image img {
+    width: 100%; 
+    height: auto; 
+    text-align: center;
+}
+
+.restaurant img {
+    width: 100%; 
+    height: auto; 
+    text-align: center;
+}
+
+.background img {
+    width: 100%; 
+    height: auto; 
+    text-align: center;
 }
 
 .Awards {
+    text-align: center;
+}
+
+.Awards_image img {
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+
+#contactForm {
     text-align: center;
 }
 
