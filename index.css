@@ -55,4 +55,12 @@ body {
 .break {
     margin-top: 50px;
 }
-
+   
+#footer {
+    display: flexbox;
+}
+.social{
+    display:flexbox;
+    width: 200px;
+    flex-wrap: wrap;
+}
