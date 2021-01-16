@@ -25,7 +25,7 @@ body {
 }
 
 /* navigation css */
-.sec_nav{
+#sec_nav{
     display: flex;
     justify-content: center;
 }
