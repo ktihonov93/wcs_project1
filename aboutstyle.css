@@ -38,18 +38,53 @@ h1 {
 }
 
 .Awards {
+    margin-top: 20px;
     text-align: center;
 }
 
 .Awards_image {
     display: flex;
-    justify-content: center;
-   }
+    }
+
+    .Awards_image2 {
+        display: flex;
+        }
    
-.bloc {
+.bloc img {
         width: 100%;
-        height: auto;
-}
+       }
+
+       .bloc2 img {
+        width: 100%;
+       }
+
 #contactForm {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+     }
+
+body {
+    font-family: 'Yusei Magic', sans-serif;
+    background-color: #837ea1;
+    background-image: url("https://www.transparenttextures.com/patterns/brick-wall.png");
+}
+
+.discription {
+    font-family: 'Caveat', cursive;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.restaurant {
+    margin-top: 20px;
     text-align: center;
 }
+
+.bottom {
+ min-height: 60px; padding: 0px 30px; border-radius: 10px; text-transform: uppercase; letter-spacing: 2px; font-size: 18px; color: #fff; background-color: #5e5373; box-shadow: 0 5px 0px #3c354a; transition-property: all; transition-duration: 0.5s; transition-delay: 0s; transition-timing-function: cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+
+.bottom:hover{
+    padding: 0px 50px; background-color: #18b525; 
+        }
