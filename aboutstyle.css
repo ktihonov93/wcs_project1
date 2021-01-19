@@ -85,6 +85,47 @@ body {
  min-height: 60px; padding: 0px 30px; border-radius: 10px; text-transform: uppercase; letter-spacing: 2px; font-size: 18px; color: #fff; background-color: #5e5373; box-shadow: 0 5px 0px #3c354a; transition-property: all; transition-duration: 0.5s; transition-delay: 0s; transition-timing-function: cubic-bezier(0.68,-0.55,0.265,1.55);
 }
 
+
 .bottom:hover{
     padding: 0px 50px; background-color: #18b525; 
-        }
+}
+body {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    color: #5a5a5a;
+  }
+  
+
+  /* NAV BAR */
+  /*nav bar*/
+.nav1 {
+  display: flex;
+  justify-content: center;
+}
+.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: teal;
+}
+.nav {
+    display: flex;
+    align-items: center;
+}
+.nav li a:hover {
+    background-color: turquoise;
+    color: black;
+}
+
+.nav li a {
+    text-decoration: none;
+    list-style-type: none;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+    font-size: large;
+}
+
