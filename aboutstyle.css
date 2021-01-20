@@ -89,12 +89,7 @@ body {
 .bottom:hover{
     padding: 0px 50px; background-color: #18b525; 
 }
-body {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-    color: #5a5a5a;
-  }
-  
+ 
 
   /* NAV BAR */
   /*nav bar*/
@@ -129,3 +124,38 @@ body {
     font-size: large;
 }
 
+@media screen and (min-width: 700px) { 
+
+    .chef { 
+  
+      display: flex; 
+  margin-bottom: 20px;
+  margin-left: 5px;
+  margin-right: 5px;
+  border: 5px outset rgb(66, 14, 14);
+    } 
+    .chef_image {
+        min-width: 300px;
+        min-height: auto;
+        margin-right: 5px;
+        border-right: 5px outset rgb(66, 14, 14);
+    }
+  }
+
+  video {
+      width: 100%;
+      margin-bottom: 40px;
+  }
+
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: none;
+  }
+  .modal-inner {
+    margin-top: 30px;
+  }
