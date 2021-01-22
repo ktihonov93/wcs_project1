@@ -64,7 +64,7 @@
     </div>
   <h2 class="restaurant">Inside our restaurant</h2>
   	
-<video src="https://vod-progressive.akamaized.net/exp=1611103541~acl=%2A%2F432971116.mp4%2A~hmac=7fa9368398f68fd311b41d6750a6d54924aa465b2da65a64ae6e21406eee7731/vimeo-prod-skyfire-std-us/01/3768/5/143842659/432971116.mp4" controls autoplay loop muted></video>
+<video src="https://pixabay.com/ru/videos/download/video-1192_source.mp4" controls autoplay loop muted></video>
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -103,21 +103,65 @@
 
 
 
-    <form id="contactForm">
-        <input class="bottom" type="submit" value="Join Us Now"/>
-    </form>
-
-
-
-    <div id="modal" class="modal">
-      <div class="modal-inner content center">
-        <h2>Congrats!</h2>
-        <p>You did it, I'm open :). Now close me!</p>
-        <button id="close-modal">Close modal</button>
-      </div>
-    </div>
-
-
+    <div class='wrapper'>
+      <div class='lock-padding'>
+        <form id="contactForm">
+          <input href="#popup" class="bottom" type="submit" value="Join Us Now" />
+        </form>
+        <div id="popup" class="popup">
+          <div class="popup_body">
+            <div class="popup_content">
+              <a href="#" class="popup_close close-popup">X</a>
+              <div class="popup_title">Fill the form</div>
+              <div class="popup_text"><form id="contactForm2">
+                <label for="name">Name:</label><br />
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  value="Enter your name"
+                  cols="30"
+                /><br />
+                <label for="name">Gender:</label><br />
+                <p><input type="radio" value="man" checked name="gender" />man</p>
+                <p><input type="radio" value="woman" name="gender" />woman</p>
+                <label for="age">Age: </label><br />
+                <input
+                  type="number"
+                  step="1"
+                  min="1"
+                  max="100"
+                  value="10"
+                  id="age"
+                  name="age"
+                /><br />
+                <label for="email">Email:</label><br />
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  value="example@seamail.com"
+                  cols="30"
+                /><br />
+                <label for="message">Message:</label><br />
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Maximum of 200 characters"
+                  maxlength="200"
+                  rows="7"
+                  cols="30"
+                ></textarea>
+                <br /><br />
+                <div>
+                  <button id="close-modal">Close modal</button>
+                </div>
+              </form></div>
+            </div>
+          </div>
+          </div>
+        </div>
+        </div>
 
 
     <script
