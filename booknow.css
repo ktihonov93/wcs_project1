@@ -1,0 +1,60 @@
+.booking-chef {
+    max-width: 450px;
+    margin: 1%
+}
+
+.booking-info {
+    margin: 1%;
+}
+
+.container {
+    max-width: 1200px;
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row {
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.col-left {
+    width: 450px;
+    padding: 2% 2% 2% 0%;
+}
+.col-right {
+    width:750px;
+    padding: 2% 0% 2% 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.booking-info {
+    text-align: center;
+}
+
+.input-box{
+    padding: 5px;
+}
+
+.book-now-btn{
+    background-color: tomato;
+    color: white;
+    font-size: large;
+    width: 150px;
+    border-radius: 15px;
+}
+
+input, label {
+    display: block;
+    padding:5px;
+    width: 40%;
+}
+
+.booking-form h1 {
+    text-align: center;
+}
