@@ -4,20 +4,22 @@ body {
 
 .items {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
     align-items: center;
     height: 100%;
+    margin: 0% 5% 0% 5%;
 }
 
 .item_box {
     background-color: whitesmoke;
-    width: 50%;
     border: 5px solid black;
     padding: 5px;
     margin: 5px;
     display: flex;
     flex-direction: column;
+    width: 40%;
 }
 
 .item_price {
@@ -25,9 +27,30 @@ body {
 }
 
 /* navigation css */
-#sec_nav{
+.sec-nav-items{
     display: flex;
     justify-content: center;
+}
+
+.menu-top-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.menu-top-text h5, h1 {
+    padding: 0%;
+    margin: 0%;
+    color: white;
+}
+
+.menu-top-text h5 {
+    font-family:cursive;
+    font-style: italic;
+}
+
+.menu-top-text h1 {
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .menu_nav{
@@ -38,7 +61,6 @@ body {
 .menu_item {
     text-decoration: none;
     list-style-type: none;
-    background-color: teal;
     padding: 20px;
     font-size: large;
     color: white;
@@ -47,7 +69,7 @@ body {
     text-decoration: none;
 }
 .menu_item:hover{
-    background-color: gray
+    color: tomato;
 }
 
 ul {
@@ -56,4 +78,63 @@ ul {
 
 .items h1 {
     margin-top: 50px;
+}
+
+.menu-box {
+    background-image: url(https://i.imgur.com/MzGbQRq.png);
+    max-width: 1200px;
+    height: 250px;
+    margin-top: 15px;
+    border-radius: 15px 50px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.content-box {
+    max-width: 1200px;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;  
+    display: flex;
+    flex-wrap: wrap;  
+}
+
+@media only screen and (max-width: 600px) {
+    .menu-box {
+        background-image: url(https://i.imgur.com/MzGbQRq.png);
+        max-width: 600px;
+        height: 250px;
+        margin: 5%;
+    }
+    .content-box {
+        max-width: 600px;
+        margin-top: 15px;
+        margin-left: auto;
+        margin-right: auto;  
+        display: flex;
+        flex-wrap: wrap;  
+    }
+    .items {
+        margin: 0% 5% 0% 5%;
+    }
+    .item_box {
+        background-color: whitesmoke;
+        border: 5px solid black;
+        padding: 5px;
+        margin: 5px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1250px) {
+    .menu-box {
+        background-image: url(https://i.imgur.com/MzGbQRq.png);
+        height: 250px;
+        margin: 0% 2% 0% 2%;
+    }
 }
