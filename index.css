@@ -1,37 +1,8 @@
 body {
     width: 100%;
+    background-image: url("https://images.pexels.com/photos/1382393/pexels-photo-1382393.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
 }
 /*nav bar*/
-.nav1 {
-    display: flex;
-    justify-content: center;
-}
-.nav {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: teal;
-  }
-  .nav {
-      display: flex;
-      align-items: center;
-  }
-  .nav li a:hover {
-      background-color: turquoise;
-      color: black;
-  }
-  
-  .nav li a {
-      text-decoration: none;
-      list-style-type: none;
-      display: block;
-      color: black;
-      text-align: center;
-      padding: 20px 20px;
-      text-decoration: none;
-      font-size: large;
-  }
 .welcome {
     font-style: oblique;
     font-size: larger;
@@ -57,6 +28,38 @@ body {
 }
    
 #footer {
-    display: flexbox;
+    display: flex;
+    justify-content: space-around;
+    background-color:darkslategray;
 }
-
+.social-media1 {
+    display: block;
+}
+.social-media2 {
+    display: block;
+}
+.contacts {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding-top: 0px;
+    padding: 0px;
+}
+.contacts p {
+    margin: 1px;
+}
+p.b1{
+    font-weight: bold;
+}
+.logo{
+    padding-top: 10px;
+}
+@media screen and (max-width: 500px) {
+    #footer {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    #footer-right {
+      float: none;
+    }
+  }
