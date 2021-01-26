@@ -24,7 +24,7 @@ h1 {
 .person_star::before {
     display: flex;
     justify-content: center;
-    content: "★★★★★";
+    content: "★★★★";
     color: #ffd300;
     font-size: 40px;
     font-family: 'Times New Roman', Times, serif;
