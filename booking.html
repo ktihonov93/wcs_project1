@@ -30,27 +30,36 @@
                     <p>Monday to Tuesday <strong>12:00 to 15:00 / 19:00 to 23:00</strong></p>
                     <h3>+351 212 345 678</h3>
                 </div>
+                <div class="line"></div>
                 <div class="booking-form">
                     <h1>Book a table</h1>
                     <form class="my-form" action="">
-                        <div class="input-box">
-                            <label for="">Your name</label>
-                            <input type="text" placeholder="Full name" name="name" id="form-name" data-error="Subject field is required" required="">
+                        <div class="form-box">
+                            <div class="left-input">
+                                <div class="input-box">
+                                    <label for="">Your name</label>
+                                    <input type="text" placeholder="Full name" name="name" id="form-name" data-error="Subject field is required" required="">
+                                </div>
+                                <div class="input-box">
+                                <label>Time</label>
+                                <div class="timeinput">
+                                    <input type="text" placeholder="30/01/2021" name="datepicker" id="date-picker" data-error="Subject field is required" required="">
+                                    <input type="text" placeholder="20:00" name="timepicker" id="time-picker" data-error="Subject field is required" required="">
+                                </div>
+                            </div>
+                            </div>
+                            <div class="right-input">
+                                <div class="input-box">
+                                    <label>Phone number</label>
+                                    <input type="text" placeholder="Your phone" name="phone" id="form-phone" data-error="Subject field is required" required="">
+                                </div>
+                                <div class="input-box">
+                                    <label>Seats</label>
+                                    <input type="text" placeholder="6 persons" name="date" id="form-date" data-error="Subject field is required" required="">
+                                </div>
+                            </div>
                         </div>
-                        <div class="input-box">
-                            <label>Time</label>
-                            <input type="text" placeholder="30/01/2021" name="datepicker" id="date-picker" data-error="Subject field is required" required="">
-                            <input type="text" placeholder="20:00" name="timepicker" id="time-picker" data-error="Subject field is required" required="">
-                        </div>
-                        <div class="input-box">
-                            <label>Phone number</label>
-                            <input type="text" placeholder="Your phone" name="phone" id="form-phone" data-error="Subject field is required" required="">
-                        </div>
-                        <div class="input-box">
-                            <label>Seats</label>
-                            <input type="text" placeholder="6 persons" name="date" id="form-date" data-error="Subject field is required" required="">
-                        </div>
-                        <div class="input-box">
+                        <div class="submit-input-box">
                             <button type="submit" class="book-now-btn">BOOK NOW</button>
                         </div>
                     </form>
