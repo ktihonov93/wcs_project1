@@ -61,6 +61,14 @@ body {
 .item_img img{
     width: 100px;
     border-radius: 50px 15px;
+    opacity: 1;
+    transition: .5s ease;
+}
+
+.item_img img:hover{
+    width: 100px;
+    border-radius: 50px 15px;
+    opacity: 0.3;
 }
 
 /* navigation css */
@@ -142,6 +150,7 @@ ul {
 
 
 .image-box{
+    max-width: 1200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -179,6 +188,7 @@ ul {
 .img-right {
     max-width: 70%;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
@@ -195,20 +205,29 @@ ul {
     object-fit: cover;
     padding: 1% 0.5% 1% 1%;
     border-radius: 50px;
+    opacity: 1;
+    transition: .5s ease;
+}
+.tall-img:hover, .normal-img1:hover, .normal-img2:hover, .wide-img:hover{
+    opacity: 0.3;
 }
 .normal-img1{
     width: 48%;
-    height: 100vh;
+    height: 50vh;
     object-fit: cover; 
     padding: 1% 0.5% 0.5% 0.5%;
     border-radius: 50px 15px 15px 15px;
+    opacity: 1;
+    transition: .5s ease;
 }
 .normal-img2{
     width: 48%;
-    height: 100vh;
+    height: 50vh;
     object-fit: cover; 
     padding: 1% 1% 0.5% 0.5%;
     border-radius: 15px 50px 15px 15px;
+    opacity: 1;
+    transition: .5s ease;
 }
 .wide-img{
     width: 98%;
@@ -216,6 +235,109 @@ ul {
     object-fit: cover;
     padding: 0.5% 1% 1% 0.5%;
     border-radius: 15px 15px 50px 50px;
+    opacity: 1;
+    transition: .5s ease;
+}
+
+
+
+@media only screen and (max-width: 1250px) {
+    .menu-box {
+        background-image: url(https://i.imgur.com/MzGbQRq.png);
+        max-width: 1250px;
+        height: 250px;
+        margin: 5%;
+    }
+    .content-box {
+        max-width: 600px;
+        margin-top: 15px;
+        margin-left: auto;
+        margin-right: auto;  
+        display: flex;
+        flex-wrap: wrap;  
+    }
+    .items {
+        margin: 0% 5% 0% 5%;
+    }
+    .item_box {
+        background-color: whitesmoke;
+        border: 5px solid black;
+        padding: 5px;
+        margin: 5px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .item_new_box{
+        background-color:#e4e5e0;
+        border-radius: 50px 15px;
+        padding: 20px;
+        margin: 5px;
+        display: flex;
+        flex-direction: row;
+        width: 100%; 
+    }
+    
+    .item_text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 5px;
+        padding-right: 5px;
+        width: 100%;
+    }
+
+    .image-box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5%;
+    }
+    
+    .img-header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 5%;
+    }
+    .img-header h5, h1 {
+        padding: 0%;
+        margin: 0%;
+        color: black
+    }
+    
+    .img-header h5 {
+        font-family:cursive;
+        font-style: italic;
+    }
+    
+    .img-header h1 {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .img-right, .img-left {
+        max-width: 98%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 1%;
+    }
+    
+    .boxed-images{
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+    .normal-img1, .normal-img2, .wide-img, .tall-img {
+        width: 98%;
+        max-height: 300px;
+        height: 50%;
+        object-fit: cover;
+        border-radius: 10px; 
+    }
 }
 @media only screen and (max-width: 600px) {
     .menu-box {
@@ -336,106 +458,6 @@ ul {
         padding: 1%;
     }
 }
-
-@media only screen and (max-width: 1250px) {
-    .menu-box {
-        background-image: url(https://i.imgur.com/MzGbQRq.png);
-        max-width: 1250px;
-        height: 250px;
-        margin: 5%;
-    }
-    .content-box {
-        max-width: 600px;
-        margin-top: 15px;
-        margin-left: auto;
-        margin-right: auto;  
-        display: flex;
-        flex-wrap: wrap;  
-    }
-    .items {
-        margin: 0% 5% 0% 5%;
-    }
-    .item_box {
-        background-color: whitesmoke;
-        border: 5px solid black;
-        padding: 5px;
-        margin: 5px;
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-    .item_new_box{
-        background-color:#e4e5e0;
-        border-radius: 50px 15px;
-        padding: 20px;
-        margin: 5px;
-        display: flex;
-        flex-direction: row;
-        width: 100%; 
-    }
-    
-    .item_text{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding-left: 5px;
-        padding-right: 5px;
-        width: 100%;
-    }
-
-    .image-box{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 5%;
-    }
-    
-    .img-header{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 5%;
-    }
-    .img-header h5, h1 {
-        padding: 0%;
-        margin: 0%;
-        color: black
-    }
-    
-    .img-header h5 {
-        font-family:cursive;
-        font-style: italic;
-    }
-    
-    .img-header h1 {
-        font-family: Arial, Helvetica, sans-serif;
-    }
-    
-    .img-right, .img-left {
-        max-width: 98%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        padding: 1%;
-    }
-    
-    .boxed-images{
-        display: flex;
-        justify-content: space-evenly;
-        flex-direction: column;
-    }
-    .normal-img1, .normal-img2, .wide-img, .tall-img {
-        width: 98%;
-        max-height: 300px;
-        height: 50%;
-        object-fit: cover;
-        border-radius: 10px; 
-    }
-}
-
 @media only screen and (max-width: 400px) {
 
     .menu-box {
