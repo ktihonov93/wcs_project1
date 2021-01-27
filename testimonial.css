@@ -24,7 +24,7 @@ h1 {
 .person_star::before {
     display: flex;
     justify-content: center;
-    content: "★★★★★";
+    content: "★★★★";
     color: #ffd300;
     font-size: 40px;
     font-family: 'Times New Roman', Times, serif;
@@ -85,25 +85,49 @@ h1 {
   }
 
   #contactForm {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    text-align: center;
+    margin: 40px auto;
+        position: relative;
+      position: relative;
+      perspective-origin: center;
+      perspective: 400px;
+      transform-style: preserve-3d;
      }
 
-     .bottom {
-        min-height: 60px; padding: 0px 30px; border-radius: 10px; text-transform: uppercase; letter-spacing: 2px; font-size: 18px; color: #fff; background-color: #5e5373; box-shadow: 0 5px 0px #3c354a; transition-property: all; transition-duration: 0.5s; transition-delay: 0s; transition-timing-function: cubic-bezier(0.68,-0.55,0.265,1.55);
+     .text2 {
+        z-index: 2;
+        transform: rotateY(0deg);
+        backface-visibility: hidden;
        }
        
        
-       .bottom:hover{
+       #contactForm:hover{
         transform: rotateY(-180deg); 
        }
 
-       .text2 {
-        transform: rotateY(-180deg);
-        background-color: rgba(121, 79, 69, 0.5);
+       .bottom,
+      .text2 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        min-height: 60px; border-radius: 10px; text-transform: uppercase;
+        letter-spacing: 2px; font-size: 18px; color: #fff; background-color: #5e5373; box-shadow: 0 5px 0px #3c354a;
       }
 
+       .bottom {
+        transform: rotateY(-180deg);
+        background-color: rgba(121, 79, 69, 0.5);
+        
+        
+      }
+
+      .btn {
+        transition: all 0.8s ease 0s;
+        min-height: 60px;
+        width: 250px;
+      }
 
        .popup {
         position: fixed;
@@ -159,3 +183,62 @@ h1 {
         transform: perspective(600px) translate(0px, 0%) rotateX(0deg);
         opacity: 1;
       }
+
+      .simple-rating {
+        position: relative;
+        font-size: 40px;
+        display: inline-block;
+      }
+
+      .simple-rating::before {
+        font-family: 'Times New Roman', Times, serif;
+        content: "★★★★★";
+        display: block;
+      }
+
+      .simple-rating_items {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: row-reverse;
+        overflow: hidden;
+      }
+
+      .simple-rating_item {
+        position: absolute;
+        width: 0%;
+        height: 0%;
+        opacity: 0;
+        visibility: hidden;
+        top: 0;
+        left: 0;
+        }
+
+        .simple-rating_label {
+          flex: 0 0 20%;
+          height: 100%;
+          cursor: pointer;
+          color: #fff;
+        }
+
+        .simple-rating_label::before {
+          font-family: 'Times New Roman', Times, serif;
+          content: "★";
+          display: block;
+          transition: color 0.3s ease 0s;
+        }
+
+        .simple-rating_item:checked,
+        .simple-rating_item:checked ~ .simple-rating_label{
+          color: #ffd300;
+        }
+
+        
+        .simple-rating_label:hover,
+        .simple-rating_label:hover ~ .simple-rating_label,
+        .simple-rating_label:checked ~ .simple-rating_label:hover{
+            color: #ffef9f;
+        }

@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="testimonial.css" />
+    <link rel="stylesheet" type="text/css" href="glitcheffect.css" />
     <title>Testimonial</title>
 </head>
 
@@ -38,7 +39,7 @@
             Julie Verri - Masters of Design</div>
             </div>
     </div>
-
+    <div class="anotherPersons"></div>
 
 
 
@@ -46,9 +47,9 @@
 
     <div class='wrapper'>
         <div class='lock-padding'>
-          <form id="contactForm">
-            <input href="#popup" class="bottom" type="submit" value="Leave a review" />
-            <div class="text2">Don't be shy!</div>
+          <form id="contactForm" class="btn">
+            <input href="#popup" class="text2 btn" type="submit" value="Leave a review" />
+            <input href="#popup" class="bottom btn" type="submit" value="Don't be shy!"/>
         </form>
           <div id="popup" class="popup">
             <div class="popup_body">
@@ -72,11 +73,25 @@
                     maxlength="200"
                     rows="7"
                     cols="30"
-                  ></textarea>
+                  >jkhkhk</textarea>
                   <br /><br />
                   <div>
-                    <button id="close-modal">Close modal</button>
+                    <button id="close-modal">Submit</button>
                   </div>
+
+                  <div class="simple-rating">
+                    <div class="simple-rating_items">
+                    <input id="simple-rating_5" type="radio" class="simple-rating_item" name="simple-rating" value="5">
+                    <label for="simple-rating_5" class="simple-rating_label"></label>
+                    <input id="simple-rating_4" type="radio" class="simple-rating_item" name="simple-rating" value="4">
+                    <label for="simple-rating_4" class="simple-rating_label"></label>
+                    <input id="simple-rating_3" type="radio" class="simple-rating_item" name="simple-rating" value="3">
+                    <label for="simple-rating_3" class="simple-rating_label"></label>
+                    <input id="simple-rating_2" type="radio" class="simple-rating_item" name="simple-rating" value="2">
+                    <label for="simple-rating_2" class="simple-rating_label"></label>
+                    <input id="simple-rating_1" type="radio" class="simple-rating_item" name="simple-rating" value="1">
+                    <label for="simple-rating_1" class="simple-rating_label"></label>
+                    </div>
                 </form></div>
               </div>
             </div>
@@ -86,12 +101,13 @@
 
 
 
+</div>
 
 
 
 
 
-
+          <script src="testimonial.js"></script>
           <script src="script.js"></script>
 </body>
 
