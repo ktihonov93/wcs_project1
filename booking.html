@@ -3,21 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="booknow.css">
     <link href="index.css" rel="stylesheet" type="text/css">
-    <title>Menu</title>
+    <link rel="stylesheet" href="booknow.css">
+    <title>Book Now</title>
 </head>
 <body>
-    <nav class=nav1>
-        <img src="https://i.imgur.com/eDqkPeF.jpg" alt="logo" style="height:70px;width:70px">
-          <ul class=nav>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="testimonial.html">Testimonials</a></li>
-            <li><a href="booking.html">Book Now</a></li>
-          </ul>
-    </nav>
+    <nav>
+        <div class="logo">
+          <a href="index.html"><img src="https://i.imgur.com/eDqkPeF.jpg" alt="logo" style="height: 70px; width: 70px;" /></a>
+        </div>
+        <label for="click" class="menu-btn"><i class="fas fa-bars"></i></label>
+        <input type="checkbox" id="click" />
+        <ul>
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="testimonial.html">Testimonials</a></li>
+          <li><a href="booking.html">Book Now</a></li>
+        </ul>
+      </nav>
     <div class="container">
         <div class="row">
             <div class="col-left">

@@ -77,6 +77,19 @@ h1 {
             margin-right: 5px;
             border-left: 5px outset rgb(66, 14, 14);
         }
+
+        #meme img {
+          min-width: 300px;
+          max-width: 400px;
+          margin-right: 5px;
+          
+      }
+
+      
+      .anotherPersons {
+        display: flex;
+        justify-content: center;
+      }
   }
 
   * {
@@ -242,3 +255,23 @@ h1 {
         .simple-rating_label:checked ~ .simple-rating_label:hover{
             color: #ffef9f;
         }
+
+        .reviewStar {
+          color: #ffd300;
+          font-size: 40px;
+          font-family: 'Times New Roman', Times, serif;
+          display: none;
+        }
+
+        #meme img {
+          width: 100%; 
+          height: auto;         
+      }
+      .reviewImage {
+           text-align: center;
+          display: none; 
+      }
+
+      .anotherPersons {
+        margin-top: 20px;
+      }

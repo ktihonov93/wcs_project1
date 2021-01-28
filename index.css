@@ -1,6 +1,7 @@
 body {
     width: 100%;
-    background-color:rgb(240, 240, 222);
+
+    background-color:rgb(240, 240
 }
 /*navbar*/
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
@@ -14,7 +15,7 @@ nav {
   display: flex;
   height: 120px;
   width: 100%;
-  background:rgba(0, 0, 0, 0.856);
+  background: #242425
   align-items: center;
   justify-content: space-between;
   padding: 0 50px 0 100px;
