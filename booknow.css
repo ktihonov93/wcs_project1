@@ -120,3 +120,79 @@
 .booking-form h1{
     margin: 5%;
 }
+@media only screen and (max-width: 425px) {
+    .row {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .col-left {
+        display:none;
+    }
+    .line{
+        display: none;
+    }
+    .col-right {
+        width: 100%;
+        padding: 2% 0% 2% 0%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .booking-info {
+        margin: 5%;
+        text-align: left;
+        order: 1;
+    }
+    .booking-form{
+        order: 2;
+    }
+    .booking-form h1{
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+    .form-box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 400px;
+    }
+    .right-input{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+        order: 2;
+    }
+    .left-input{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto; 
+        order: 1;
+    }
+    .submit-input-box{ 
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+    }
+    .submit-input-box .book-now-btn{
+        margin-right: auto;
+        margin-left: auto;
+        padding: 2%;
+        margin-top: 1%;
+    }
+    .book-now-btn{
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: tomato;
+        color: white;
+        font-size: large;
+        width: 150px;
+        border-radius: 5px;
+    }
+    .my-form{
+        display: flex;
+        flex-direction: column;
+    }
+}
