@@ -39,7 +39,15 @@
             Julie Verri - Masters of Design</div>
             </div>
     </div>
-    <div class="anotherPersons"></div>
+    <div class="anotherPersons">
+      <div class="reviewImage">
+        <div id="meme"><img id="meme-picture" src="" /> </div>
+      </div>
+      <div class="text_star2">
+        <div class="reviewStar"></div>
+        <div class="reviewText"></div>
+      </div>
+    </div>
 
 
 
@@ -65,19 +73,14 @@
                     value="Enter your name"
                     cols="30"
                   /><br />
-                  <label for="message">Message:</label><br />
-                  <textarea
-                    id="message"
-                    name="message"
-                    placeholder="Maximum of 200 characters"
-                    maxlength="200"
-                    rows="7"
-                    cols="30"
-                  >jkhkhk</textarea>
-                  <br /><br />
-                  <div>
-                    <button id="close-modal">Submit</button>
-                  </div>
+
+
+                  <form>
+                    <label for="user-picture">
+                       Add image
+                     </label>
+                     <input type="file" id="user-picture" onChange="updateImage()" />
+                   </form>
 
                   <div class="simple-rating">
                     <div class="simple-rating_items">
@@ -92,6 +95,25 @@
                     <input id="simple-rating_1" type="radio" class="simple-rating_item" name="simple-rating" value="1">
                     <label for="simple-rating_1" class="simple-rating_label"></label>
                     </div>
+                  </div>
+                  <div></div>
+                  <label for="message">Message:</label><br />
+                  <textarea
+                    id="message"
+                    name="message"
+                    placeholder="Maximum of 200 characters"
+                    maxlength="200"
+                    rows="7"
+                    cols="30"
+                  ></textarea>
+                  <br /><br />
+
+                  
+                  <div>
+                    <button id="close-modal">Submit</button>
+                  </div>
+
+                  
                 </form></div>
               </div>
             </div>
@@ -104,7 +126,7 @@
 </div>
 
 
-
+ 
 
 
           <script src="testimonial.js"></script>
