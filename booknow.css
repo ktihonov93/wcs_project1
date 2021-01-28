@@ -55,7 +55,7 @@
     border-radius: 15px;
 }
 
-input, label {
+.input-box input, .input-box label{
     display: block;
     padding:5px;
     width: 98%;
