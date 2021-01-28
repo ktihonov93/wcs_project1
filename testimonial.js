@@ -49,6 +49,7 @@ form.addEventListener('click', function (event) {
 
   reviewStar.style.display = "block"
   reviewStar.style.textAlign = "center";
+  reviewImage.style.display = "block"
 
   // const divStars = document.createElement("div");
   //  divStars.innerHTML = starImage

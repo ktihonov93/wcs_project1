@@ -265,11 +265,11 @@ h1 {
 
         #meme img {
           width: 100%; 
-          height: auto;
-          
+          height: auto;         
       }
       .reviewImage {
            text-align: center;
+          display: none; 
       }
 
       .anotherPersons {
