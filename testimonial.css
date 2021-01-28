@@ -1,30 +1,23 @@
 body {
-    font-family: 'Yusei Magic', sans-serif;
-    background-color: #837ea1;
-    background-image: url("https://www.transparenttextures.com/patterns/brick-wall.png");
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
 }
 
 h1 {
     text-align: center; 
-}
-
-.feedback img {
-    text-align: center;
-    width: 100%; 
-    height: auto; 
-    margin-bottom: 20px; 
+    margin-top: 20px;
+    margin-bottom: 40px;
 }
 
 .person1_text {
-    font-family: 'Caveat', cursive;
-    font-size: 24px;
-    font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
           }
 
 .person_star::before {
     display: flex;
     justify-content: center;
-    content: "★★★★";
+    content: "★★★★★";
     color: #ffd300;
     font-size: 40px;
     font-family: 'Times New Roman', Times, serif;
@@ -37,9 +30,8 @@ h1 {
 }
 
 .person2_text {
-    font-family: 'Caveat', cursive;
-    font-size: 24px;
-    font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
 }
 
 .person2_image img {
@@ -52,36 +44,35 @@ h1 {
 
   .person1 { 
     display: flex; 
-    margin-bottom: 20px;
-    margin-left: 5px;
-    margin-right: 5px;
-    border: 5px outset rgb(66, 14, 14);
+    margin-bottom: 40px;
+    justify-content: center;
+    width: 60%;
+
     
     } 
     .person1_image {
-        min-width: 300px;
-        margin-right: 5px;
-        border-right: 5px outset rgb(66, 14, 14);
+      min-width: 200px;
+      max-width: 400px;
+        margin-right: 15px;
     }
 
     .person2 { 
         display: flex; 
         flex-direction: row-reverse;
         margin-bottom: 20px;
-        margin-left: 5px;
-        margin-right: 5px;
-        border: 5px outset rgb(66, 14, 14);
+        justify-content: center;
+        max-width: 1200px;
         } 
         .person2_image {
-            min-width: 200px;
-            margin-right: 5px;
-            border-left: 5px outset rgb(66, 14, 14);
+          min-width: 200px;
+          max-width: 400px;
+            margin-right: 15px;
         }
 
         #meme img {
           min-width: 300px;
           max-width: 400px;
-          margin-right: 5px;
+          margin-right: 15px;
           
       }
 
@@ -131,7 +122,7 @@ h1 {
 
        .bottom {
         transform: rotateY(-180deg);
-        background-color: rgba(121, 79, 69, 0.5);
+        background-color: rgba(121, 79, 69, 0.911);
         
         
       }
