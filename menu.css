@@ -1,6 +1,22 @@
+html {
+    scroll-behavior: smooth;
+  }
+
 body {
     width: 100%;
 }
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: black;
+    text-align: center;
+  }
+  
+  .sticky + .content {
+    padding-top: 60px;
+  }
 
 .items {
     display: flex;
@@ -114,7 +130,14 @@ body {
 .menu_nav a {
     text-decoration: none;
 }
-.menu_item:hover{
+.foodLink{
+    color: white;
+}
+
+.foodLink:hover{
+    color: tomato;
+}
+.active{
     color: tomato;
 }
 
@@ -126,11 +149,23 @@ ul {
     margin-top: 50px;
 }
 
+.headtext{
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.headtexth1{
+    align-items: center;
+}
+
 .menu-box {
     background-image: url(https://i.imgur.com/MzGbQRq.png);
     max-width: 1200px;
     height: 250px;
-    margin-top: 15px;
+    padding-top: 20px;
+    margin-top: 5%;
     border-radius: 15px 50px;
     margin-left: auto;
     margin-right: auto;
@@ -342,9 +377,9 @@ ul {
 @media only screen and (max-width: 600px) {
     .menu-box {
         background-image: url(https://i.imgur.com/MzGbQRq.png);
-        max-width: 600px;
+        width: 96%;
         height: 250px;
-        margin: 5%;
+        margin: 2%;
     }
     .content-box {
         max-width: 600px;
@@ -462,17 +497,24 @@ ul {
 
     .menu-box {
         background-image: url(https://i.imgur.com/MzGbQRq.png);
-        max-width: 400px;
+        width: 96%;
         height: 250px;
-        margin: 5%;
+        margin: 2%;
     }
     .content-box {
-        max-width: 400px;
+        width: 100%;
         margin-top: 15px;
         margin-left: auto;
         margin-right: auto;  
         display: flex;
         flex-wrap: wrap;  
+    }
+    .menu_item {
+        text-decoration: none;
+        list-style-type: none;
+        padding: 10px;
+        font-size: medium;
+        color: white;
     }
     .items {
         margin: 0% 5% 0% 5%;
@@ -503,12 +545,6 @@ ul {
         padding-left: 5px;
         padding-right: 5px;
         width: 100%;
-    }
-
-    .menu-box {
-        background-image: url(https://i.imgur.com/MzGbQRq.png);
-        height: 250px;
-        margin: 0% 2% 0% 2%;
     }
 
     .image-box{
