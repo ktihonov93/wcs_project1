@@ -37,7 +37,7 @@
                 <div class="line"></div>
                 <div class="booking-form">
                     <h1>Book a table</h1>
-                    <form class="my-form" action="">
+                    <form class="my-form" action="" onsubmit="return false">
                         <div class="form-box">
                             <div class="left-input">
                                 <div class="input-box">
@@ -64,12 +64,22 @@
                             </div>
                         </div>
                         <div class="submit-input-box">
-                            <button type="submit" class="book-now-btn">Find a table</button>
+                            <button type="submit" class="book-now-btn" id="submitBtn">Find a table</button>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
     </div>
+    <div id="bookSuccess" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <img src="https://i.imgur.com/Q66RVy0.png" alt="success icon" style="width: 50px;">
+          <h1>SUCCESS</h1>
+          <h3>Thank you for your booking.</h3>
+          <h5>See you soon.</h5>
+        </div>
+      </div>
+      <script src="book.js"></script>
 </body>
 </html>
