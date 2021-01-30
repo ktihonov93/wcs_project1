@@ -301,7 +301,7 @@ ul {
 
 @media only screen and (max-width: 1024px){
     .menu-box {
-        background-image: url(https://i.imgur.com/MzGbQRq.png);
+        background-image: linear-gradient(150deg, #F47A39, #FFC149);
         max-width: 1024;
         height: 250px;
         margin: 2% 2% 0% 2%;
@@ -319,7 +319,7 @@ ul {
 
 @media only screen and (max-width: 1250px) {
     .menu-box {
-        background-image: url(https://i.imgur.com/MzGbQRq.png);
+        background-image: linear-gradient(150deg, #F47A39, #FFC149);
         max-width: 1250px;
         height: 250px;
         margin: 2% 2% 0% 2%;
@@ -417,7 +417,7 @@ ul {
 }
 @media only screen and (max-width: 768px) {
     .menu-box {
-        background-image: url(https://i.imgur.com/MzGbQRq.png);
+        background-image: linear-gradient(150deg, #F47A39, #FFC149);
         width: 96%;
         height: 250px;
         margin: 2% 2% 0% 2%;
@@ -541,7 +541,7 @@ ul {
     }
 
     .menu-box {
-        background-image: url(https://i.imgur.com/MzGbQRq.png);
+        background-image: linear-gradient(150deg, #F47A39, #FFC149);
         width: 96%;
         height: 250px;
         margin: 2% 2% 0% 2%;
