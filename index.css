@@ -137,10 +137,10 @@ font-style:italic;
 }
 
 .picswrap2 {
-display: inline-flexbox;
-justify-content: space-evenly;
-margin-top: 20px;
-margin-left: 25%;
+  display: inline-flexbox;
+  justify-content: space-evenly;
+  margin-top: 20px;
+  margin-left: 26%;
 }
 .picswrap2 img{
 height: 250px;
@@ -158,6 +158,7 @@ justify-content: center;
 
 #footer {
 display: flex;
+position: relative;
 justify-content: space-around;
 position: relative;
 width: 100%;
@@ -210,7 +211,7 @@ font-size: large;
 }
 .welcome {
   background-image: url(https://images.pexels.com/photos/133222/pexels-photo-133222.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
-  max-width: 910px;
+  max-width: 920px;
   height: 250px;
   margin-top: 15px;
   border-radius: 15px 25px;
@@ -239,7 +240,7 @@ font-size: large;
   margin-left: 25%;
 }
 .picswrap2 img{
-  height: 250px;
+  height: 200px;
 max-width:300px;
 border-radius: 15px 25px;
 }
@@ -249,6 +250,8 @@ margin-right: auto;
 display: flex;
 flex-direction: column;
 justify-content: center;
+align-items: center;
+margin-right: 10%;
 }
 
 
@@ -259,7 +262,7 @@ justify-content: center;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.856);
   color: white;
-  position: fixed;
+  position: relative;
   height: 130px;
 }
 .social-media1 {
@@ -309,45 +312,50 @@ font-size: large;
   background-image: url(https://images.pexels.com/photos/133222/pexels-photo-133222.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
   max-width: 540px;
   height: 220px;
-  margin-top: 15px;
+  margin-top: 10px;
   border-radius: 15px 25px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center; 
+ 
 }
 .story{
-  font-style:italic;
+   font-style:italic;
     font-size: larger;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     color:darkgreen;
   }
+  .story{
+    padding-left: 10%;
+  }
   .picswrap2 {
-    display: inline-flexbox;
-    justify-content: space-evenly;
+    display: flex-inline;
+    justify-content:center;
     margin-top: 20px;
-    margin-left: 25%;
+  }
+  .picswrap2{
+    padding-right: auto;
   }
 .picswrap2 img{
-  height: 180px;
-max-width:200px;
+  height: 150px;
+max-width:180px;
 border-radius: 15px 25px;
 }
 .hide{
   display: none;
 }
+
 .container{
 margin-left: auto;
 margin-right: auto;
 display: flex;
 flex-direction: column;
 justify-content: center;
+align-items: center;
+margin-right: 10%;
 }
   .social-media1 {
   display: block;
@@ -380,13 +388,12 @@ font-size: large;
   display: none;
 }
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 400px) {
 .welcome {
   font-style: italic;
   font-size: larger;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   color: darkgreen;
@@ -396,8 +403,8 @@ font-size: large;
 .welcome {
   background-image: url(https://images.pexels.com/photos/133222/pexels-photo-133222.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
   max-width: 380px;
-  height: 160px;
-  margin-top: 15px;
+  height: 150px;
+  margin-top: 10px;
   border-radius: 15px 25px;
   margin-left: auto;
   margin-right: auto;
@@ -408,23 +415,24 @@ font-size: large;
 }
 .story{
   font-style:italic;
-    font-size: 30px;
+    font-size: larger;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     color:darkgreen;
+    margin-left: 30%;
   }
 
 .picswrap2 {
-  display:inline-flexbox;
-  justify-content: space-evenly;
+  display:flex;
+  justify-content: center;
   margin-top: 20px;
-  margin-left: 25%;
+  margin-left: 0%;
 }
 .picswrap2 img{
-  height: 160px;
-max-width:180px;
+  height: 140px;
+max-width:140px;
 border-radius: 15px 25px;
 }
 .hide {
@@ -435,7 +443,10 @@ margin-left: auto;
 margin-right: auto;
 display: flex;
 flex-direction: column;
+flex-wrap: wrap;
 justify-content: center;
+align-items: center;
+margin-right: 10%;
 }
   .social-media1 {
   display: block;
@@ -469,7 +480,7 @@ font-size: large;
 #footer {
   display: flex;
   justify-content: space-around;
-  position: fixed;
+  position: relative;
   width: 100%;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.856);
