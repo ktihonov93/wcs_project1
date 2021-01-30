@@ -10,15 +10,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" type="text/css" href="aboutstyle.css"/>
     <link rel="stylesheet" type="text/css" href="glitcheffect.css" />
+    <link href="navfoot.css" rel="stylesheet" type="text/css">
     <title>About</title>
 </head>
 <body>
   <nav>
-    <div class="logo1"><img src="https://i.imgur.com/eDqkPeF.jpg" alt="logo" style="height: 90px; width: 90px;" />
+    <div class="logo1"><a href="index.html"><img src="https://i.imgur.com/eDqkPeF.jpg" alt="logo" class="wildLogo"></a>
     </div>
     <label for="click" class="menu-btn"><i class="fas fa-bars"></i></label>
     <input type="checkbox" id="click" />
-    <ul>
+    <ul style="margin-bottom: 0px;">
       <li><a class="active" href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="menu.html">Menu</a></li>
@@ -200,7 +201,28 @@
           </div>
         </div>
         </div>
-
+        <footer id="footer">
+          <a href="index.html"><img src="https://i.imgur.com/eDqkPeF.jpg" alt="logo" class="wildLogo"></a>
+          <div id="social">
+            <i class="fa fa-facebook-square fa-2x"></i>
+            <i class="fa fa-twitter-square fa-2x"></i>
+            <i class="fa fa-instagram-square fa-2x"></i>
+            <i class="fa fa-youtube-square fa-2x"></i>
+          </div>
+        <div class="card">
+          <h4> Contacts:</h4>
+          <ul>
+            <li>Phone:+351 212 345 678</li>
+            <li>Address:Some Where @Street Number ###</li>
+            <li>Opening Hours:Tue - Sun 12:00 to 15:00 / 19:00 to 23:00</li>
+          </ul>
+        </div>
+        <div class="map">
+          <h5>Reach Us:</h5>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d21559.566294427666!2d19.04445695!3d47.51044699999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2shu!4v1610491067615!5m2!1sen!2shu" width="100" height="100" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          </iframe>
+        </div> 
+      </footer>
 
     <script
     src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -217,6 +239,7 @@
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"
   ></script>
+  
        
     <script src="script.js"></script>
 </body>
