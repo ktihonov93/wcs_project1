@@ -1,87 +1,118 @@
 body {
-    font-family: 'Yusei Magic', sans-serif;
-    background-color: #837ea1;
-    background-image: url("https://www.transparenttextures.com/patterns/brick-wall.png");
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
 }
 
 h1 {
     text-align: center; 
-}
-
-.feedback img {
-    text-align: center;
-    width: 100%; 
-    height: auto; 
-    margin-bottom: 20px; 
+    margin-top: 20px;
+    margin-bottom: 40px;
 }
 
 .person1_text {
-    font-family: 'Caveat', cursive;
-    font-size: 24px;
-    font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+          }
+
+.text_star {
+   padding: 30px;
+   background-image: linear-gradient(150deg, #F47A39
+    , #FFC149);
+    background-image: -webkit-linear-gradient(150deg, #F47A39
+    , #FFC149);
+    background-image: -moz-linear-gradient(150deg, #F47A39
+    , #FFC149);
+   border-radius: 15px;
+   color: whitesmoke;
+   margin-bottom: 40px;
+          }
+
+.text_star2 {
+    padding: 30px;
+    background-image: linear-gradient(150deg, #F47A39
+    , #FFC149);
+    background-image: -webkit-linear-gradient(150deg, #F47A39
+    , #FFC149);
+    background-image: -moz-linear-gradient(150deg, #F47A39
+    , #FFC149);
+    border-radius: 15px;
+    color: whitesmoke;
+    display: none;
           }
 
 .person_star::before {
     display: flex;
     justify-content: center;
-    content: "★★★★";
+    content: "★★★★★";
+    padding-bottom: 10px;
     color: #ffd300;
     font-size: 40px;
     font-family: 'Times New Roman', Times, serif;
          }
 
 .person1_image img {
+  border-radius: 15px;
     width: 100%; 
     height: auto;
     text-align: center;
 }
 
 .person2_text {
-    font-family: 'Caveat', cursive;
-    font-size: 24px;
-    font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .person2_image img {
+  border-radius: 15px;
     width: 100%; 
     height: auto;
     text-align: center;
 }
 
-@media screen and (min-width: 700px) { 
+.review_content {
+  margin-left: 5%;
+  margin-right: 5%;
+}
 
-  .person1 { 
-    display: flex; 
-    margin-bottom: 20px;
-    margin-left: 5px;
-    margin-right: 5px;
-    border: 5px outset rgb(66, 14, 14);
-    
+@media screen and (min-width: 600px) { 
+
+  .review_content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .person1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    max-width: 700px;
     } 
-    .person1_image {
-        min-width: 300px;
-        margin-right: 5px;
-        border-right: 5px outset rgb(66, 14, 14);
-    }
 
+    .person1_image {
+      min-width: 300px;
+      max-width: 500px;
+        margin-right: -75px;
+        }
+        
     .person2 { 
         display: flex; 
+        justify-content: center;
+        align-items: center;
         flex-direction: row-reverse;
+        max-width: 700px;
         margin-bottom: 20px;
-        margin-left: 5px;
-        margin-right: 5px;
-        border: 5px outset rgb(66, 14, 14);
         } 
-        .person2_image {
-            min-width: 200px;
-            margin-right: 5px;
-            border-left: 5px outset rgb(66, 14, 14);
-        }
 
+        .person2_image {
+          min-width: 300px;
+          max-width: 500px;
+            margin-left: -75px;
+        }
+        
         #meme img {
           min-width: 300px;
           max-width: 400px;
-          margin-right: 5px;
+          margin-right: -75px;
           
       }
 
@@ -89,6 +120,8 @@ h1 {
       .anotherPersons {
         display: flex;
         justify-content: center;
+        align-items: center;
+        max-width: 700px;
       }
   }
 
@@ -131,7 +164,7 @@ h1 {
 
        .bottom {
         transform: rotateY(-180deg);
-        background-color: rgba(121, 79, 69, 0.5);
+        background-color: rgba(121, 79, 69, 0.911);
         
         
       }
