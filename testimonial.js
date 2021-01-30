@@ -41,7 +41,7 @@ form.addEventListener('click', function (event) {
 
   newMessage.innerHTML = message.value;
 
-  // We add the li to the ul 
+  // We add the li to the ul.
 
   reviewText.appendChild(newMessage);
 
