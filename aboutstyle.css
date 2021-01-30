@@ -1,10 +1,13 @@
 h1 {
     text-align: center;
+    margin-top: 40px;
 }
 
 .chef_image_container {
     display: flex;
     justify-content: center;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .chef_name {
@@ -14,6 +17,7 @@ h1 {
 .chef_image {
     width: 100%; 
     height: auto; 
+    
      }
 
 .container {
@@ -44,10 +48,16 @@ h1 {
 
 .Awards_image {
     display: flex;
+
+    margin-left: 5%;
+    margin-right: 5%;
     }
 
     .Awards_image2 {
         display: flex;
+
+    margin-left: 5%;
+    margin-right: 5%;
         }
    
 .bloc img {
@@ -65,15 +75,20 @@ h1 {
      }
 
 body {
-    font-family: 'Yusei Magic', sans-serif;
-    background-color: #837ea1;
-    background-image: url("https://www.transparenttextures.com/patterns/brick-wall.png");
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
 }
 
 .discription {
-    font-family: 'Caveat', cursive;
-    font-size: 24px;
-    font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  margin-left: 5%;
+    margin-right: 5%;
+}
+
+.carousel {
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .restaurant {
@@ -127,18 +142,25 @@ body {
 @media screen and (min-width: 700px) { 
 
     .chef { 
-  
-      display: flex; 
-  margin-bottom: 20px;
-  margin-left: 5px;
-  margin-right: 5px;
-  border: 5px outset rgb(66, 14, 14);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    margin-bottom: 20px;
+    max-width: 700px;
+    margin-left: 5%;
+    margin-right: 5%;
     } 
+
+    .chef_wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
     .chef_image {
         min-width: 300px;
         min-height: auto;
         margin-right: 5px;
-        border-right: 5px outset rgb(66, 14, 14);
     }
   }
 
