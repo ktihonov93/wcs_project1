@@ -107,8 +107,8 @@ nav {
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.856);
   color: white;
-  padding-top:50px;
-  padding-bottom: 50px;
+  padding-top:30px;
+  padding-bottom: 30px;
   }
   .social-media1 {
   display: block;
@@ -252,7 +252,6 @@ nav {
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.856);
     color: white;
-    height: 130px;
     }
   }
   .wildLogo{
