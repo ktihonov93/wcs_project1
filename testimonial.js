@@ -5,6 +5,7 @@ const stars = document.getElementsByClassName("simple-rating_item")
 const reviewImage = document.querySelector(".reviewImage")
 const reviewStar = document.querySelector(".reviewStar")
 const reviewText = document.querySelector(".reviewText")
+const textStar2 = document.querySelector(".text_star2")
 console.log(reviewStar)
 console.log(stars)
 
@@ -49,7 +50,11 @@ form.addEventListener('click', function (event) {
 
   reviewStar.style.display = "block"
   reviewStar.style.textAlign = "center";
+  reviewStar.style.paddingBottom = "10px";
   reviewImage.style.display = "block"
+  reviewImage.style.borderRadius = "15px";
+  reviewImage.style.marginRight = "-75px";
+  textStar2.style.display = "block"
 
   // const divStars = document.createElement("div");
   //  divStars.innerHTML = starImage

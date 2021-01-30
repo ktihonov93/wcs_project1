@@ -11,19 +11,46 @@ h1 {
 
 .person1_text {
   font-family: Arial, Helvetica, sans-serif;
-  color: black;
+          }
+
+.text_star {
+   padding: 30px;
+   background-image: linear-gradient(150deg, #F47A39
+    , #FFC149);
+    background-image: -webkit-linear-gradient(150deg, #F47A39
+    , #FFC149);
+    background-image: -moz-linear-gradient(150deg, #F47A39
+    , #FFC149);
+   border-radius: 15px;
+   color: whitesmoke;
+   margin-bottom: 40px;
+          }
+
+.text_star2 {
+    padding: 30px;
+    background-image: linear-gradient(150deg, #F47A39
+    , #FFC149);
+    background-image: -webkit-linear-gradient(150deg, #F47A39
+    , #FFC149);
+    background-image: -moz-linear-gradient(150deg, #F47A39
+    , #FFC149);
+    border-radius: 15px;
+    color: whitesmoke;
+    display: none;
           }
 
 .person_star::before {
     display: flex;
     justify-content: center;
     content: "★★★★★";
+    padding-bottom: 10px;
     color: #ffd300;
     font-size: 40px;
     font-family: 'Times New Roman', Times, serif;
          }
 
 .person1_image img {
+  border-radius: 15px;
     width: 100%; 
     height: auto;
     text-align: center;
@@ -31,48 +58,61 @@ h1 {
 
 .person2_text {
   font-family: Arial, Helvetica, sans-serif;
-  color: black;
 }
 
 .person2_image img {
+  border-radius: 15px;
     width: 100%; 
     height: auto;
     text-align: center;
 }
 
-@media screen and (min-width: 700px) { 
+.review_content {
+  margin-left: 5%;
+  margin-right: 5%;
+}
 
-  .person1 { 
-    display: flex; 
-    margin-bottom: 40px;
+@media screen and (min-width: 600px) { 
+
+  .review_content{
+    display: flex;
     justify-content: center;
-    width: 60%;
+    align-items: center;
+  }
 
-    
+  .person1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    max-width: 700px;
     } 
-    .person1_image {
-      min-width: 200px;
-      max-width: 400px;
-        margin-right: 15px;
-    }
 
+    .person1_image {
+      min-width: 300px;
+      max-width: 500px;
+        margin-right: -75px;
+        }
+        
     .person2 { 
         display: flex; 
-        flex-direction: row-reverse;
-        margin-bottom: 20px;
         justify-content: center;
-        max-width: 1200px;
+        align-items: center;
+        flex-direction: row-reverse;
+        max-width: 700px;
+        margin-bottom: 20px;
         } 
-        .person2_image {
-          min-width: 200px;
-          max-width: 400px;
-            margin-right: 15px;
-        }
 
+        .person2_image {
+          min-width: 300px;
+          max-width: 500px;
+            margin-left: -75px;
+        }
+        
         #meme img {
           min-width: 300px;
           max-width: 400px;
-          margin-right: 15px;
+          margin-right: -75px;
           
       }
 
@@ -80,6 +120,8 @@ h1 {
       .anotherPersons {
         display: flex;
         justify-content: center;
+        align-items: center;
+        max-width: 700px;
       }
   }
 
