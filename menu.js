@@ -11,3 +11,7 @@ function myFunction() {
     navbar.classList.remove("sticky");
   }
 }
+
+document.getElementById("goToBook").onclick = function () {
+  location.href = "booking.html";
+};

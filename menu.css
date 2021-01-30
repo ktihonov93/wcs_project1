@@ -644,3 +644,30 @@ ul {
         border-radius: 10px; 
     }
 }
+.menucta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.ctatext {
+    padding: 100px;
+    align-items: center;
+    text-align: center;
+}
+.ctatext button{
+    margin: 10px;
+    padding:10px;
+}
+#goToBook{
+	background-color:#ff9900;
+	border-radius:42px;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:16px 31px;
+    text-decoration:none;
+    -webkit-appearance: inherit;
+}
+#goToBook:focus {
+    outline:0;
+}
