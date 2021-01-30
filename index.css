@@ -164,7 +164,8 @@ width: 100%;
 bottom: 0;
 background-color: rgba(0, 0, 0, 0.856);
 color: white;
-height: 130px;
+padding-top:50px;
+padding-bottom: 50px;
 }
 .social-media1 {
 display: block;
@@ -474,12 +475,9 @@ font-size: large;
   background-color: rgba(0, 0, 0, 0.856);
   color: white;
   height: 130px;
+  }
 }
-
-  #footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: left;
-}
+.wildLogo{
+  width: 90px;
+  height: 90px;
 }
