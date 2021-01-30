@@ -159,7 +159,7 @@ justify-content: center;
 #footer {
 display: flex;
 justify-content: space-around;
-position: fixed;
+position: relative;
 width: 100%;
 bottom: 0;
 background-color: rgba(0, 0, 0, 0.856);
