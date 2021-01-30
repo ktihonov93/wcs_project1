@@ -6,6 +6,7 @@ const reviewImage = document.querySelector(".reviewImage")
 const reviewStar = document.querySelector(".reviewStar")
 const reviewText = document.querySelector(".reviewText")
 const textStar2 = document.querySelector(".text_star2")
+const message = "Thank you for your review!";
 console.log(reviewStar)
 console.log(stars)
 
@@ -60,7 +61,7 @@ form.addEventListener('click', function (event) {
   //  divStars.innerHTML = starImage
 
   // anotherPersons.appendChild(divStars);
-
+  alert(message)
 });
 //}
 
@@ -69,3 +70,9 @@ function updateImage() {
   document.getElementById('meme-picture').src = window.URL.createObjectURL(file);
 }
 
+
+/*document.getElementById("contactForm")
+  .addEventListener("submit", function (event) {
+    event.preventDefault();
+    alert(message);
+  });*/

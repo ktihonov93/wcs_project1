@@ -1,6 +1,9 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   color: black;
+  background-image: url("https://i.imgur.com/lSUXshU.jpg");
+  background-size: 100%, auto;
+  background-repeat: no-repeat;
 }
 
 h1 {
@@ -86,6 +89,9 @@ h1 {
     align-items: center;
     margin-bottom: 40px;
     max-width: 700px;
+  background-color: white;
+  margin-top: 20px;
+  border-radius: 15px;
     } 
 
     .person1_image {
