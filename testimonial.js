@@ -6,7 +6,7 @@ const reviewImage = document.querySelector(".reviewImage")
 const reviewStar = document.querySelector(".reviewStar")
 const reviewText = document.querySelector(".reviewText")
 const textStar2 = document.querySelector(".text_star2")
-const message = "Thank you for your review!";
+const message2 = "Thank you for your review!";
 console.log(reviewStar)
 console.log(stars)
 
@@ -61,7 +61,7 @@ form.addEventListener('click', function (event) {
   //  divStars.innerHTML = starImage
 
   // anotherPersons.appendChild(divStars);
-  alert(message)
+  alert(message2)
 });
 //}
 
