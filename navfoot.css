@@ -213,7 +213,7 @@ nav {
   .logo img{
     display: none;
   }
-  #{
+  #footer{
     position: relative;
   }
   }
