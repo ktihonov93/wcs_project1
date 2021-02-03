@@ -98,6 +98,7 @@ nav {
     color: cyan;
   }
   }
+  /*footer*/
   
   #footer {
   display: flex;
@@ -147,7 +148,7 @@ nav {
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.856);
     color: white;
-    position: fixed;
+    position: relative;
     height: 130px;
   }
   .social-media1 {
@@ -212,6 +213,9 @@ nav {
   .logo img{
     display: none;
   }
+  #{
+    position: relative;
+  }
   }
   @media screen and (max-width: 450px) {
   
@@ -247,7 +251,7 @@ nav {
   #footer {
     display: flex;
     justify-content: space-around;
-    position: fixed;
+    position: relative;
     width: 100%;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.856);
