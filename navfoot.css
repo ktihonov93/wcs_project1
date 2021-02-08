@@ -64,6 +64,7 @@ nav {
   #click:checked ~ .menu-btn i:before {
     content: "\f00d";
   }
+  
   nav ul {
     position: fixed;
     top: 120px;
@@ -98,6 +99,7 @@ nav {
     color: cyan;
   }
   }
+  /*footer*/
   
   #footer {
   display: flex;
@@ -108,38 +110,31 @@ nav {
   background-color: rgba(0, 0, 0, 0.856);
   color: white;
   padding-top:30px;
-  padding-bottom: 30px;
+  padding-bottom: 0px;
+  height: 130px;
   }
   .social-media1 {
   display: block;
-  margin-top: 5px;
+  padding-bottom: 5px;
   }
-  .social-media2 {
-  display: block;
-  margin-top: 5px;
+  .b1{
+    font-size: large;
+    font-weight: bold;
   }
-  .contacts {
-  margin-bottom: 0px;
-  margin-top: 0px;
-  padding-top: 0px;
-  padding: 0px;
+  .card h4{
+    font-weight: bold;
   }
-  .contacts p {
-  margin: 1px;
-  }
-  p.b1 {
-  font-weight: bold;
-  }
-  .logo{
-  margin-top: 8px;
-  }
+  
   .map h2{
-  margin-top: 5px;
   font-weight: bold;
   font-size: large;
   }
+  .map{
+    padding-bottom: 5px;
+  }
+  
 
-  @media screen and (max-width:1250px){  
+  /* @media screen and (max-width:1250px){  
   #footer {
     display: flex;
     justify-content: space-around;
@@ -147,40 +142,35 @@ nav {
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.856);
     color: white;
-    position: fixed;
+    position:relative;
     height: 130px;
   }
   .social-media1 {
     display: block;
-    margin-top: 5px;
+   
   }
   .social-media2 {
     display: block;
     margin-top: 5px;
   }
+  .social-media{
+    margin-top: 0px;
+  }
+
   .contacts {
     margin-bottom: 0px;
     margin-top: 0px;
     padding-top: 0px;
     padding: 0px;
   }
-  .contacts p {
-    margin: 1px;
-  }
-  p.b1 {
-    font-weight: bold;
-  }
-  .logo{
-    margin-top: 8px;
-  }
+  
   .map h2{
-    margin-top: 5px;
   font-weight: bold;
-  font-size: large;
+  font-size: small;
   }
   
   }
-  @media screen and (max-width: 650px) {
+  @media screen and (min-width: 650px) {
 
     .social-media1 {
     display: block;
@@ -196,22 +186,26 @@ nav {
     padding-top: 0px;
     padding: 0px;
   }
-  .contacts p {
-    margin: 1px;
-  }
-  p.b1 {
-    font-weight: bold;
-  }
+  
   
   .map h2{
-    margin-top: 5px;
+   
   font-weight: bold;
-  font-size: large;
+  font-size: small;
   }
   
-  .logo img{
-    display: none;
-  }
+
+  #footer {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.856);
+    color: white;
+    height: 130px;
+    }
+  
   }
   @media screen and (max-width: 450px) {
   
@@ -229,12 +223,7 @@ nav {
     padding-top: 0px;
     padding: 0px;
   }
-  .contacts p {
-    margin: 1px;
-  }
-  p.b1 {
-    font-weight: bold;
-  }
+  
   
   .map h2{
     margin-top: 5px;
@@ -247,14 +236,12 @@ nav {
   #footer {
     display: flex;
     justify-content: space-around;
-    position: fixed;
+    position: relative;
     width: 100%;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.856);
     color: white;
+    height: 130px;
     }
   }
-  .wildLogo{
-    width: 90px;
-    height: 90px;
-  }
+   */
