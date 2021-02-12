@@ -1,58 +1,6 @@
 body {
   width: 100%;
-  /* background-color:rgb(240, 240, 222); */
 }
-
-@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
-* {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-font-family: "Poppins", sans-serif;
-}
-nav {
-display: flex;
-height: 120px;
-width: 100%;
-background:rgba(0, 0, 0, 0.856);
-align-items: center;
-justify-content: space-between;
-padding: 0 50px 0 100px;
-flex-wrap: wrap;
-}
-nav ul {
-display: flex;
-flex-wrap: wrap;
-list-style: none;
-}
-nav ul li {
-margin: 0 10px;
-}
-nav ul li a {
-color:white;
-text-decoration: none;
-font-size: 22px;
-font-weight: 500;
-padding: 10px 15px;
-border-radius: 5px;
-letter-spacing: 1px;
-transition: all 0.3s ease;
-}
-/*nav ul li a.active,*/
-nav ul li a:hover {
-color:black;
-background:grey;
-}
-nav .menu-btn i {
-color:grey;
-font-size: 22px;
-cursor: pointer;
-display: none;
-}
-input[type="checkbox"] {
-display: none;
-}
-
 
 @media (max-width: 1250px) {
 nav {
@@ -285,7 +233,7 @@ margin-bottom: 10px;
      align-items: center;
    }
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 950px) {
 .welcome {
   font-style: italic;
   font-size: larger;
@@ -300,13 +248,17 @@ margin-bottom: 10px;
 }
 .welcome {
   background-image: url(https://images.pexels.com/photos/133222/pexels-photo-133222.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
-  max-width: 540px;
-  height: 220px;
+  max-width: 820px;
+  max-height: 220px;
   margin-top: 10px;
   border-radius: 15px 25px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 10px;
+}
+.picswrap3 img{
+  max-width: 820px;
+   max-height: 220px;
 }
 .story{
   font-family: Arial, Helvetica, sans-serif;
@@ -330,10 +282,11 @@ margin-bottom: 10px;
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
   
 .picswrap2 img{
-  height: 150px;
-max-width:180px;
+max-height: 200px;
+max-width:250px;
 border-radius: 15px 25px;
 }
 #container1{
@@ -342,7 +295,36 @@ border-radius: 15px 25px;
   align-items: center;
 }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 780px) {
+  .picswrap2{
+    display:-ms-inline-flexbox;
+    justify-content:space-evenly;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  .picswrap2 img{
+    max-height: 180px;
+    max-width:200px;
+    border-radius: 15px 25px;
+    }
+  .picswrap2{
+    display: block;
+    align-items: center;
+  }
+  .story{
+    font-size: large;
+  }
+  .story2{
+    font-size: large;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    }
+}
+
+@media screen and (max-width: 670px) {
 .welcome {
   font-style: italic;
   font-size: larger;
@@ -357,7 +339,7 @@ border-radius: 15px 25px;
 .welcome {
   background-image: url(https://images.pexels.com/photos/133222/pexels-photo-133222.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
   max-width: 380px;
-  height: 150px;
+  max-height: 150px;
   margin-top: 10px;
   border-radius: 15px 25px;
   margin-left: auto;
@@ -397,13 +379,14 @@ border-radius: 15px 25px;
   margin-left: 0%;
 }
 .picswrap2 img{
-  height: 90px;
-max-width:140px;
+  max-height: 140px;
+max-width:150px;
 border-radius: 15px 25px;
+margin-top: 10px;
 }
 .picswrap3 img{
   max-width: 380px;
-height: 140px;
+max-height: 150px;
 margin-top: 10px;
 border-radius: 15px 25px;
 margin-left: auto;

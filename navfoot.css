@@ -1,6 +1,5 @@
 body {
     width: 100%;
-    /* background-color:rgb(240, 240, 222); */
   }
   
   @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
@@ -163,7 +162,7 @@ nav {
   }
   
   }
-  @media screen and (max-width: 750px) {
+  @media screen and (max-width: 950px) {
 
   .contacts {
     margin-bottom: 0px;
@@ -190,7 +189,7 @@ nav {
     }
   
   }
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 670px) {
   
   .contacts {
     margin-bottom: 0px;
