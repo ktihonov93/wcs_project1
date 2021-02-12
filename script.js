@@ -23,7 +23,7 @@ document
 // });
 
 
-const popupLinks = document.querySelectorAll('.bottom');
+const popupLinks = document.querySelectorAll('.action');
 const body = document.querySelector('body');
 const lockPadding = document.querySelectorAll('.lock-padding');
 

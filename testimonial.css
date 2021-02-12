@@ -26,7 +26,6 @@ h1 {
     , #FFC149);
    border-radius: 15px;
    color: whitesmoke;
-   margin-bottom: 40px;
           }
 
 .text_star2 {
@@ -87,7 +86,7 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     max-width: 700px;
   background-color: white;
   margin-top: 20px;
@@ -107,6 +106,7 @@ h1 {
         flex-direction: row-reverse;
         max-width: 700px;
         margin-bottom: 20px;
+        margin-top: 20px;
         } 
 
         .person2_image {
@@ -133,6 +133,9 @@ h1 {
 
   * {
       margin: 0;
+      padding: 0;
+      border: 0;
+      vertical-align: baseline;
       box-sizing: border-box;
   }
 
@@ -179,6 +182,7 @@ h1 {
         transition: all 0.8s ease 0s;
         min-height: 60px;
         width: 250px;
+        transition-delay: 2s;
       }
 
        .popup {

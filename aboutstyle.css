@@ -46,15 +46,27 @@ h1 {
     text-align: center;
 }
 
+
+.Awards_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .Awards_image {
     display: flex;
-
+    width: 60%;
     margin-left: 5%;
     margin-right: 5%;
     }
 
+.Awards_image div img {
+  justify-content: center;
+}
+
     .Awards_image2 {
         display: flex;
+        width: 60%;
 
     margin-left: 5%;
     margin-right: 5%;
