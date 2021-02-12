@@ -1,9 +1,8 @@
 body {
   width: 100%;
-  /* background-color:rgb(240, 240, 222); */
 }
 
-@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+/*@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
 * {
 margin: 0;
 padding: 0;
@@ -38,7 +37,7 @@ border-radius: 5px;
 letter-spacing: 1px;
 transition: all 0.3s ease;
 }
-/*nav ul li a.active,*/
+/*nav ul li a.active,
 nav ul li a:hover {
 color:black;
 background:grey;
@@ -51,7 +50,7 @@ display: none;
 }
 input[type="checkbox"] {
 display: none;
-}
+}*/
 
 
 @media (max-width: 1250px) {
