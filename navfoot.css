@@ -163,7 +163,7 @@ nav {
   }
   
   }
-  @media screen and (max-width: 750px) {
+  @media screen and (max-width: 950px) {
 
   .contacts {
     margin-bottom: 0px;
@@ -190,7 +190,7 @@ nav {
     }
   
   }
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 670px) {
   
   .contacts {
     margin-bottom: 0px;
