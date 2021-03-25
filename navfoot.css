@@ -134,80 +134,117 @@ nav {
   }
   
 
-  @media screen and (max-width:1250px){  
-  #footer {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.856);
-    color: white;
-    position:relative;
-    height: 130px;
-  }
-  .social-media1 {
-    display: block;
-  }
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
 
-  .contacts {
-    margin-bottom: 0px;
-    margin-top: 0px;
-    padding-top: 0px;
-    padding: 0px;
-  }
-  
-  .map h2{
-  font-weight: bold;
-  font-size: small;
-  }
-  
-  }
-  @media screen and (max-width: 950px) {
-
-  .contacts {
-    margin-bottom: 0px;
-    margin-top: 0px;
-    padding-top: 0px;
-    padding: 0px;
-  }
-  
-  .map h2{
-   
-  font-weight: bold;
-  font-size: small;
-  }
-  
-  #footer {
+nav {
     display: flex;
-    justify-content: space-around;
-    position: relative;
+    height: 120px;
     width: 100%;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.856);
+    background: rgba(0, 0, 0, 0.856);
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px 0 100px;
+    flex-wrap: wrap;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
     color: white;
-    height: 130px;
-    }
-  
-  }
-  @media screen and (max-width: 670px) {
-  
-  .contacts {
-    margin-bottom: 0px;
-    margin-top: 0px;
-    padding-top: 0px;
-    padding: 0px;
-  }
-  
-  
-  .map h2{
-    margin-top: 5px;
-  font-weight: bold;
-  font-size: large;
-  }
-  .logo img{
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 500;
+    padding: 10px 15px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+
+/*nav ul li a.active,*/
+
+nav ul li a:hover {
+    color: black;
+    background: grey;
+}
+
+nav .menu-btn i {
+    color: grey;
+    font-size: 22px;
+    cursor: pointer;
     display: none;
-  }
-  #footer {
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+@media (max-width: 1250px) {
+    nav {
+        padding: 0 40px 0 50px;
+    }
+}
+
+@media (max-width: 920px) {
+    nav .menu-btn i {
+        display: block;
+    }
+    #click:checked~.menu-btn i:before {
+        content: "\f00d";
+    }
+    nav ul {
+        position: fixed;
+        top: 120px;
+        left: -100%;
+        background: black;
+        height: 100vh;
+        width: 100%;
+        text-align: center;
+        display: block;
+        transition: all 0.3s ease;
+    }
+    #click:checked~ul {
+        left: 0;
+    }
+    nav ul li {
+        width: 100%;
+        margin: 40px 0;
+    }
+    nav ul li a {
+        width: 100%;
+        margin-left: -100%;
+        display: block;
+        font-size: 20px;
+        transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+    #click:checked~ul li a {
+        margin-left: 0px;
+    }
+    /*nav ul li a.active,*/
+    nav ul li a:hover {
+        background: none;
+        color: cyan;
+    }
+}
+
+
+/*footer*/
+
+#footer {
     display: flex;
     justify-content: space-around;
     position: relative;
@@ -215,10 +252,109 @@ nav {
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.856);
     color: white;
-    height: 130px;
+    padding-top: 30px;
+    padding-bottom: 0px;
+}
+
+.social-media1 {
+    display: block;
+    padding-bottom: 5px;
+}
+
+.b1 {
+    font-size: large;
+    font-weight: bold;
+}
+
+.card2 h4 {
+    font-size: large;
+    font-weight: bold;
+}
+
+.map h2 {
+    font-weight: bold;
+    font-size: large;
+}
+
+.map {
+    padding-bottom: 5px;
+}
+
+@media screen and (max-width:1250px) {
+    #footer {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.856);
+        color: white;
+        position: relative;
+        height: 130px;
+    }
+    .social-media1 {
+        display: block;
+    }
+    .contacts {
+        margin-bottom: 0px;
+        margin-top: 0px;
+        padding-top: 0px;
+        padding: 0px;
+    }
+    .map h2 {
+        font-weight: bold;
+        font-size: small;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .contacts {
+        margin-bottom: 0px;
+        margin-top: 0px;
+        padding-top: 0px;
+        padding: 0px;
+    }
+    .map h2 {
+        font-weight: bold;
+        font-size: small;
+    }
+    #footer {
+        display: flex;
+        justify-content: space-around;
+        position: relative;
+        width: 100%;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.856);
+        color: white;
+        height: 130px;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .contacts {
+        margin-bottom: 0px;
+        margin-top: 0px;
+        padding-top: 0px;
+        padding: 0px;
+    }
+    .map h2 {
+        margin-top: 5px;
+        font-weight: bold;
+        font-size: large;
+    }
+    .logo img {
+        display: none;
+    }
+    #footer {
+        display: flex;
+        justify-content: space-around;
+        position: relative;
+        width: 100%;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.856);
+        color: white;
+        height: 130px;
     }
     .cardss{
       display:none;
     }
-  }
-   
+}
