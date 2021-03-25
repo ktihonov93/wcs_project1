@@ -120,7 +120,7 @@ nav {
     font-size: large;
     font-weight: bold;
   }
-  .card h4{
+  .cardss h4{
     font-size: large;
     font-weight: bold;
   }
@@ -217,7 +217,7 @@ nav {
     color: white;
     height: 130px;
     }
-    .card{
+    .cardss{
       display:none;
     }
   }

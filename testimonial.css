@@ -319,7 +319,7 @@ h1 {
         margin-top: 20px;
       }
 
-      nav {
+       nav {
         display: flex;
         height: 120px;
         width: 100%;
@@ -347,8 +347,8 @@ h1 {
         letter-spacing: 1px;
         transition: all 0.3s ease;
         }
-        /*nav ul li a.active,*/
-        nav ul li a:hover {
+        nav ul li a.active,
+         nav ul li a:hover {
         color:black;
         background:grey;
         }
@@ -402,8 +402,8 @@ h1 {
           margin-left: 0px;
         }
         /*nav ul li a.active,*/
-        nav ul li a:hover {
+         nav ul li a:hover {
           background:none;
           color: cyan;
         }
-        }
+        }  
