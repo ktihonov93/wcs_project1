@@ -218,11 +218,17 @@ input[type="checkbox"] {
         position: relative;
         width: 100%;
         bottom: 0;
-        background-color: rgba(0, 0, 0, 0.856);
-        color: white;
         height: 130px;
     }
     .card2 {
         display: none;
     }
+}
+
+.social-media1 a {
+    color: rgb(0, 0, 238);
+}
+
+.social-media2 a {
+    color: rgb(85, 26, 139);
 }
