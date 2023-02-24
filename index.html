@@ -11,6 +11,18 @@
   <link rel="stylesheet" href="fontawesome.min.css">
   <title>wild code bar</title>
   <script src="https://kit.fontawesome.com/694b87d8e9.js" crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    (function (l) {
+      if (l.search[1] === '/') {
+        var decoded = l.search.slice(1).split('&').map(function (s) {
+          return s.replace(/~and~/g, '&')
+        }).join('?');
+        window.history.replaceState(null, null,
+          l.pathname.slice(0, -1) + decoded + l.hash
+        );
+      }
+    }(window.location))
+  </script>
 </head>
 
 <body>
@@ -34,23 +46,22 @@
       <h3>To The Wild Code Bar</h3>
       <p>Ready To Be Opened</p>
     </div>
-      <div class="story">
-        <h1>Our story</h1>
-        <h3>Wild Code Bar is a restaurant, bar & coffee roastery</h3>
-        <h3>located on the wild code street</h3>
-        <h3>We believe in purity and taste</h3>
-        <h3>We promise a relaxed takeaway and dining experience</h3>
-      </div>
-      <div class="container">
+    <div class="story">
+      <h1>Our story</h1>
+      <h3>Wild Code Bar is a restaurant, bar & coffee roastery</h3>
+      <h3>located on the wild code street</h3>
+      <h3>We believe in purity and taste</h3>
+      <h3>We promise a relaxed takeaway and dining experience</h3>
+    </div>
+    <div class="container">
       <div class="picswrap2">
-        <img src="https://images.pexels.com/photos/9315/menu-restaurant-france-eating-9315.jpg"
-          style="height:250px;width:300px;" alt="pics2" />
-        <img src=" https://images.pexels.com/photos/2403392/pexels-photo-2403392.jpeg" style="height:250px;width:300px;"
-          class="hide" alt="pics3" />
-        <img src="https://images.pexels.com/photos/2403391/pexels-photo-2403391.jpeg" style="height:250px;width:300px;"
-          alt="pics4" />
+        <img src="https://i.ibb.co/sQmfTNN/menu-restaurant-france-eating-9315.jpg" style="height:250px;width:300px;"
+          alt="pics2" />
+        <img src="https://i.ibb.co/QYFgsK7/pexels-photo-2403392.jpg" style="height:250px;width:300px;" class="hide"
+          alt="pics3" />
+        <img src="https://i.ibb.co/Pz1p2tP/pexels-photo-2403391.jpg" style="height:250px;width:300px;" alt="pics4" />
       </div>
-      </div>
+    </div>
     <div class="aboutfood">
       <div class="story2">
         <h3>We believe in pure, sensitive thoughts & experimental attitude</h3>
@@ -58,8 +69,7 @@
         <h3>For us, cooking is equal to tradition</h3>
       </div>
       <div class=picswrap3>
-        <img src="https://images.pexels.com/photos/3345876/pexels-photo-3345876.jpeg" style="height:250px;width:900px;"
-          alt="pics5" />
+        <img src="https://i.ibb.co/PGFMPcB/pexels-photo-3345876.jpg" style="height:250px;width:900px;" alt="pics5" />
       </div>
     </div>
   </div>
